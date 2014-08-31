@@ -1,1 +1,48 @@
+
+<html>
+<head>
+
+<title>ANTICLIMAX?</title>
+<script language="javascript" type="text/javascript">
+var t;
+var colour=new Array("blue","yellow","red");
+var backi=0;
+var colouri=1;
+var standard = document.title;
+var totalC = standard.length;
+
+function epilepsy(){
+
+	backi=backi+1;
+if(backi>=colour.length){
+	backi=0;
+}
+
+	colouri=colouri+1;
+if(colouri>=colour.length){
+	colouri=0;
+}
+
+	document.body.style.backgroundColor = colour[backi];
+	document.body.style.color = colour[colouri];
+
+
+
+
+t=setTimeout('epilepsy()', 50);
+checkform()
+}
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+
+</head>
+<body onload="epilepsy()">
+
+
 Not quite what you expected?
+
+</html>
