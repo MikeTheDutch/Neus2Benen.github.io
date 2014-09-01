@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<title>DONT WORRY!</title>
+<script language="javascript" type="text/javascript">
+var t;
+var colour=new Array("orange","black");
+var backi=0;
+var colouri=1;
+var standard = document.title;
+var totalC = standard.length;
+
+function Rave(){
+
+	backi=backi+1;
+if(backi>=colour.length){
+	backi=0;
+}
+
+	colouri=colouri+1;
+if(colouri>=colour.length){
+	colouri=0;
+}
+
+	document.body.style.backgroundColor = colour[backi];
+	document.body.style.color = colour[colouri];
+	
+	var rand = Math.round(Math.random()*300);
+	document.getElementById("2SPOOKY4ME").style.fontSize = rand+50;
+	document.getElementById("DONTWORRY!").style.fontSize = 200-rand;
+
+
+
+
+t=setTimeout('Rave()', 200);
+checkform()
+}
+
+</script>
+
+
+
+</head>
+<body onload="Rave()">
+<center>
+<span id="2SPOOKY4ME">2SPOOKY4ME! D:</span><BR><BR><BR>
+<span id="DONTWORRY!">DONT WORRY!</span>
+
+
+
+</body>
+
+</html>
