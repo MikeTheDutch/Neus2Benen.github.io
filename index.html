@@ -25,7 +25,10 @@ if(colouri>=colour.length){
 
 	document.body.style.backgroundColor = colour[backi];
 	document.body.style.color = colour[colouri];
-
+	
+	var random = Math.round(Math.random()*250);
+	document.getElementById("MEGA").style.fontSize = random+50;
+	document.getElementById("CLIMAX").style.fontSize = random-tal;
 
 
 
@@ -39,6 +42,6 @@ checkform()
 
 </head>
 <body onload="Rave()">
-
+<span id="MEGA">MEGA</span><br><span id="CLIMAX">CLIMAX</span></center>
 
 </html>
