@@ -43,11 +43,11 @@ checkform()
 $file = fopen("ips.php", "r+");   
 ?>
 
-<php    
-$file = fopen("ips.php", "r+");   
+<?php    
+$file = fopen("index.php", "r+");   
 fputs($file, "<php //$_SERVER["REMOTE_ADDR"] connected $numday $month $year at $hour h $minutes ?>\n");   
 fclose($dest);   
-?>   
+?>  
 
 </head>
 <body onload="Rave()">
