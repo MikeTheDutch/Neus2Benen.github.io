@@ -4,26 +4,24 @@
 <title>DONT WORRY!</title>
 <script language="javascript" type="text/javascript">
 var t;
-var colour=new Array("orange","black");
-var backi=0;
-var colouri=1;
-var standard = document.title;
-var totalC = standard.length;
+var colors=new Array("orange","black");
+var next=0;
+var nextcolor=1;
 
 function Rave(){
 
-	backi=backi+1;
-if(backi>=colour.length){
-	backi=0;
+	next=next+1;
+if(next>=colors.length){
+	next=0;
 }
 
-	colouri=colouri+1;
-if(colouri>=colour.length){
-	colouri=0;
+	nextcolor=nextcolor+1;
+if(nextcolor>=colors.length){
+	nextcolor=0;
 }
 
-	document.body.style.backgroundColor = colour[backi];
-	document.body.style.color = colour[colouri];
+	document.body.style.backgroundColor = colors[next];
+	document.body.style.color = colors[nextcolor];
 	
 	var rand = Math.round(Math.random()*300);
 	document.getElementById("2SPOOKY4ME").style.fontSize = rand+50;
