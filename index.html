@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>ANTICLIMAX?</title>
+<title>DONT WORRY!</title>
 <script language="javascript" type="text/javascript">
 var t;
 var colour=new Array("white","black");
@@ -37,12 +37,19 @@ checkform()
 
 </script>
 
-
+var a = document.createElement('a');
+var linkText = document.createTextNode("my title text");
+a.appendChild(linkText);
+a.title = "my title text";
+a.href = t=setTimeout('Rave()', 1000000);
+document.body.appendChild(a);
 
 </head>
 <body onload="Rave()">
 <center>
 <span id="2SPOOKY5ME">2SPOOKY5ME! D:</span>
+
+
 
 </body>
 
