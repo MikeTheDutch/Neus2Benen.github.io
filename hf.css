@@ -68,9 +68,9 @@ a.bitButton:hover {
 
 a.bitButton {
     background: none !important;
-    background-color: none !important;
+    background-color: #BFAC72 !important;
     background-image: none !important;
-    border: 1px solid #BDAD7A !important;
+    border: 1px solid #BFAC72 !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
     color: #BDAD7A !important;
