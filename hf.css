@@ -18,7 +18,7 @@
 }
 
 .menu ul a:hover {
-    color: #ECE4C4 !important;
+    color: #000000 !important;
 }
 
 .pagination a:hover {
@@ -90,7 +90,7 @@ a.navButton :hover {
 }
 
 a.navButton hover {
-    color: #BDAD7A ;
+    color: #A59875 ;
 }
 
 a.pagination_first {
