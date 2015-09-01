@@ -45,12 +45,12 @@ td.tfoot div strong {
 
 input.bitButton {
     background: none !important;
-    background-color: none !important;
+    background-color: #BDAD7A !important;
     background-image: none !important;
     border: 1px solid #BDAD7A !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
-    color: #BDAD7A !important;
+    color: #ffffff !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-size: 12px !important;
@@ -73,7 +73,7 @@ a.bitButton {
     border: 1px solid #BFAC72 !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
-    color: #BDAD7A !important;
+    color: #ffffff !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-size: 12px !important;
