@@ -47,10 +47,10 @@ input.bitButton {
     background: none !important;
     background-color: none !important;
     background-image: none !important;
-    border: 1px solid #A59875 !important;
+    border: 1px solid #BDAD7A !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
-    color: #A59875 !important;
+    color: #BDAD7A !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-size: 12px !important;
@@ -63,17 +63,17 @@ input.bitButton {
 }
 
 a.bitButton:hover {
-    background: #A59875 !important;
+    background: #BDAD7A !important;
 }
 
 a.bitButton {
     background: none !important;
     background-color: none !important;
     background-image: none !important;
-    border: 1px solid #A59875 !important;
+    border: 1px solid #BDAD7A !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
-    color: #A59875 !important;
+    color: #BDAD7A !important;
     cursor: pointer !important;
     display: inline-block !important;
     font-size: 12px !important;
@@ -86,11 +86,11 @@ a.bitButton {
 }
 
 a.navButton :hover {
-    color: #646d78 ;
+    color: #BDAD7A ;
 }
 
 a.navButton hover {
-    color: #646d78 ;
+    color: #BDAD7A ;
 }
 
 a.pagination_first {
