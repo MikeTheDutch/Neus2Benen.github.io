@@ -5,7 +5,7 @@
 }
 
 #panel {
-    background-color: #F8F2DA !important;
+    background-color: #ECE4C4 !important;
     border-style: none !important;
     line-height: 20px !important;
     padding: 25px !important;
@@ -18,7 +18,7 @@
 }
 
 .menu ul a:hover {
-    color: #A59875 !important;
+    color: #ECE4C4 !important;
 }
 
 .pagination a:hover {
