@@ -18,18 +18,18 @@
 }
 
 .menu ul a:hover {
-    color: #BDAD7A !important;
+    color: #957B4D !important;
 }
 
 .pagination a:hover {
     background: none !important;
     border: none !important;
-    color: #BDAD7A !important;
+    color: #957B4D !important;
 }
 
 .shadetabs li a.selected {
     border-style: none !important;
-    color: #A59875 !important;
+    color: #957B4D !important;
     font-size: 12px !important;
     top: 0 !important;
 }
@@ -110,7 +110,7 @@ a.navButton hover {
 
 a.pagination_first {
     border-style: none !important;
-    color: #FFF !important;
+    color: #eee332 !important;
     background: none !important;
 }
 
