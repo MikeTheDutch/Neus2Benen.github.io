@@ -18,13 +18,13 @@
 }
 
 .menu ul a:hover {
-    color: #ffffff !important;
+    color: #A59875 !important;
 }
 
 .pagination a:hover {
     background: none !important;
     border: none !important;
-    color: #FFFFFF !important;
+    color: #A59875 !important;
 }
 
 .shadetabs li a.selected {
