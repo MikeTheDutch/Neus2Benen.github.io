@@ -6,7 +6,7 @@
 
 #panel {
     background-color: #ECE4C4 !important;
-    border-style: 1px !important;
+    border-style: none !important;
     line-height: 20px !important;
     padding: 25px !important;
     font-size: 11px !important;
@@ -86,7 +86,7 @@ a.bitButton {
 }
 
 a.navButton :hover {
-    color: #BDAD7A ;
+    color: #CFC39E ;
 }
 
 a.navButton hover {
