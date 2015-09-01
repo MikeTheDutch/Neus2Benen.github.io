@@ -63,7 +63,7 @@ input.bitButton {
 }
 
 a.bitButton:hover {
-    background: #BDAD7A !important;
+    background: #BFAC72 !important;
 }
 
 a.bitButton {
@@ -86,7 +86,7 @@ a.bitButton {
 }
 
 a.navButton :hover {
-    color: #CFC39E ;
+    color: #BFAC72 ;
 }
 
 a.navButton hover {
