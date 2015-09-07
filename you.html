@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+<title>YOU</title>
+<script type="text/javascript"> 
+var totalCount = 16;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = 'data/'+num+'.gif';
+document.body.style.backgroundSize = "cover";// Background repeat
+setTimeout(arguments.callee, 3100);
+}
+</script>
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="data/you.mp3"> 
+    <source src="data/you.ogg">
+</audio>
+
+</body> 
+
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
+
+<script language="JavaScript">
+<!-- 
+var space = " ";
+var speed = "150";
+var pos = 0;
+var msg = "YOU";
+function Scroll()
+{
+document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", speed);
+}
+Scroll();
+-->
+</script>
+
+
+
+</html>
