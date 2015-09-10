@@ -40,21 +40,26 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 if (isMobile)
 {
-show_image("/data/404.jpg/", 100, 100, "alt")
+show_image()
 }
 
 
-function show_image(src, width, height, alt) {
-    var img = document.createElement("img");
-    img.src = src;
-    img.width = width;
-    img.height = height;
-    img.alt = alt;
+function show_image() {
 
-    // This next line will just add it to the <body> tag
-    document.body.appendChild(img);
+    document.innerHTML = "<input type='image' src='/data/404.jpg' onclick='playAudio()'>";
 }
+
+function playAudio()
+{
+        var audio = document.getElementById("audio");
+       audio.play();
+}
+
+
 </script>
+
+
+<audio id="audio" src="data/avalanche.ogg" ></audio>
 
 
 <audio autoplay loop>
