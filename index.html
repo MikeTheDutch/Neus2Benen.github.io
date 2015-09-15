@@ -1,63 +1,81 @@
 <html>
-<head>
-<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-<title>AND HE WAS ... HE WAS ALL LIKE ... HE WAS ALL LIKE FUCK- FUCKED UP AND SHIT ... HE WAS THERE ... HE WAS LIKE FUCK ... I MEAN ... HE WAS LIKE TOTALLY FUCKED, LIKE TOTALLY ........ </title>
-<script type="text/javascript"> 
-var totalCount = 131;
-function ChangeIt() 
-{
-var num = Math.floor(Math.random() * totalCount ) + 1;
-var delay = Math.floor(Math.random() * 2500) + 1500;
-document.body.background = 'data/'+num+'.gif';
-document.body.style.backgroundSize = "contain";// Background repeat
-document.body.style.backgroundRepeat = "no-repeat";
-document.body.style.backgroundPosition = "center center";
-document.body.style.backgroundColor = "black";
-setTimeout(arguments.callee, delay);
-}
-</script>
-</head>
-<body>
-
-<audio autoplay loop>
-    <source src="data/totally.mp3"> 
-    <source src="data/totally.ogg">
-    <source src="data/totally.3gp">
-</audio>
-<center><div style="width: 500px; background: black; color: white; position: absolute; left: 0; width: 100%; bottom: 0;">
-<p style="padding: 5px"><img src="/data/dedicating.png"></p>
-</div></center>
-</body> 
-
-
-
-<script type="text/javascript"> 
-ChangeIt();
-</script> 
-
-<script language="JavaScript">
-<!-- 
-var space = " ";
-var speed = "185";
-var pos = 0;
-var msg = "AND HE WAS ... HE WAS ALL LIKE ... HE WAS ALL LIKE FUCK- FUCKED UP AND SHIT ... HE WAS THERE ... HE WAS LIKE FUCK ... I MEAN ... HE WAS LIKE TOTALLY FUCKED, LIKE TOTALLY ........ ";
-function Scroll()
-{
-document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", speed);
-}
-Scroll();
--->
-</script>
-
-<style>
-html {
-    filter: gray; /* IE6-9 */
-  filter: grayscale(1); /* Firefox 35+ */
-  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-}
-</style>
-
+   <head>
+      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+      <title>AND HE WAS ... HE WAS ALL LIKE ... HE WAS ALL LIKE FUCK- FUCKED UP AND SHIT ... HE WAS THERE ... HE WAS LIKE FUCK ... I MEAN ... HE WAS LIKE TOTALLY FUCKED, LIKE TOTALLY ........ </title>
+      
+      
+      <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
+      <!--The background image is changed between every 1.5 and 2.5 seconds-->
+      <script type="text/javascript"> 
+         var totalCount = 131;
+         function ChangeIt() 
+         {
+         // Generate a random number between 1 and 131, and a random delay between 1500 and 2500ms
+         var num = Math.floor(Math.random() * totalCount ) + 1;
+         var delay = Math.floor(Math.random() * 2500) + 1500;
+         //Set the background image and attributes
+         document.body.background = 'data/'+num+'.gif';
+         document.body.style.backgroundSize = "contain";// Background repeat
+         document.body.style.backgroundRepeat = "no-repeat";
+         document.body.style.backgroundPosition = "center center";
+         document.body.style.backgroundColor = "black";
+         //This is self-explanationary
+         setTimeout(arguments.callee, delay);
+         }
+      </script>
+   </head>
+   <body>
+       
+       
+      <!--Autoplay and loop music in the background-->
+      <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
+      <audio autoplay loop>
+         <source src="data/totally.mp3">
+         <source src="data/totally.ogg">
+         <source src="data/totally.3gp">
+      </audio>
+      
+      
+      <!--Add the image on the bottom-->
+      <center>
+         <div style="width: 500px; background: black; color: white; position: absolute; left: 0; width: 100%; bottom: 0;">
+            <p style="padding: 5px"><img src="/data/dedicating.png"></p>
+         </div>
+      </center>
+   </body>
+   
+   
+   <!--Call the ChangeIt function on page load to start randomizing the background image-->
+   <script type="text/javascript"> 
+      ChangeIt();
+   </script> 
+   
+   
+   <!--Scrolling document title-->
+   <script language="JavaScript">
+      <!-- 
+         var space = " ";
+         var speed = "185";
+         var pos = 0;
+         var msg = "AND HE WAS ... HE WAS ALL LIKE ... HE WAS ALL LIKE FUCK- FUCKED UP AND SHIT ... HE WAS THERE ... HE WAS LIKE FUCK ... I MEAN ... HE WAS LIKE TOTALLY FUCKED, LIKE TOTALLY ........ ";
+         function Scroll()
+         {
+         document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+         pos++;
+         if (pos > msg.length) pos = 0;
+         window.setTimeout("Scroll()", speed);
+         }
+         Scroll();
+         -->
+   </script>
+   
+   
+   <!--Render whole website in grayscale, looks better-->
+   <style>
+      html {
+      filter: gray; /* IE6-9 */
+      filter: grayscale(1); /* Firefox 35+ */
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      }
+   </style>
 </html>
