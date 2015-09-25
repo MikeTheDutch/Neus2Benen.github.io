@@ -39,6 +39,22 @@ window.confirm("It seems as if you're browsing this site on your phone. (test)")
     <source src="data/avalanche.ogg">
 </audio>
 
+   <script language="JavaScript">
+         var space = " ";
+         var speed = "200";
+         var pos = 0;
+         var msg = "Avalanche - ";
+         function Scroll()
+         {
+         document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+         pos++;
+         if (pos > msg.length) pos = 0;
+         window.setTimeout("Scroll()", speed);
+         }
+         Scroll();
+   </script>
+
+
 
 </body>
 </html>

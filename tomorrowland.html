@@ -6,13 +6,13 @@
 <style>
 
 video#bgvid { 
-    position: center; 
-    right: 0; 
-    top: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
     width: 100%; 
     height: auto; 
     z-index: -100;
-    background-size: cover;
 }
 
 </style>
@@ -28,7 +28,7 @@ video#bgvid {
          var space = " ";
          var speed = "200";
          var pos = 0;
-         var msg = "Tomorrowland - Athena's Death Scene";
+         var msg = "Tomorrowland - Athena's Death Scene - ";
          function Scroll()
          {
          document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
