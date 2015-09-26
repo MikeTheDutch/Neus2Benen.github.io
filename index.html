@@ -1,63 +1,76 @@
-<html>
-   <head>
-      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <title>Dedicating Boredom</title>
-      
-      
-      <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
-      <!--The background image is changed between every 1.5 and 2.5 seconds-->
-      <script type="text/javascript"> 
-         var totalCount = 131;
-         function ChangeIt() 
-         {
-         // Generate a random number between 1 and 131, and a random delay between 1500 and 2500ms
-         var num = Math.floor(Math.random() * totalCount ) + 1;
-         var delay = Math.floor(Math.random() * 2500) + 1500;
-         //Set the background image and attributes
-         document.body.background = 'data/'+num+'.gif';
-         document.body.style.backgroundSize = "contain";// Background repeat
-         document.body.style.backgroundRepeat = "no-repeat";
-         document.body.style.backgroundPosition = "center center";
-         document.body.style.backgroundColor = "black";
-         //This is self-explanationary
-         setTimeout(arguments.callee, delay);
-         }
-      </script>
-   </head>
-   <body>
-       
-       
-      <!--Autoplay and loop music in the background-->
-      <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
-      <audio autoplay loop>
-         <source src="data/totally.mp3">
-         <source src="data/totally.ogg">
-         <source src="data/totally.3gp">
-      </audio>
-      
-      
-      <!--Add the image on the bottom-->
-      <center>
-         <div style="width: 500px; background: black; color: white; position: absolute; left: 0; width: 100%; bottom: 0;">
-            <p style="padding: 5px"><img src="/data/dedicating.png"></p>
-         </div>
-      </center>
-   </body>
-   
-   
-   <!--Call the ChangeIt function on page load to start randomizing the background image-->
-   <script type="text/javascript"> 
-      ChangeIt();
-   </script> 
-   
-   
-   <!--Scrolling document title-->
-   <script language="JavaScript">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jawe.XYZ</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
+	<div id="fullpage">
+		<div class="section section-1">
+		<center>
+		<div class="big">Jawe.XYZ</div>
+		<br>
+		<img src="data/images/header.png" width="150" height="150">
+		<br><br>
+		<div class="small">It seems as if, at first glance, this site isn't particularily interesting.<br>
+			You're right, it is not that interesting!<br><br>
+			Scroll down to take a look at the stuff I like.<br>
+			Your browser requires MP4 support to play videos and MP3 or OGG support for all audio to play properly.
+
+
+	</script>
+		</div>
+		</center>
+		</div>
+
+
+
+        <div class="section section-2">
+            <div class="big">Links</div>
+			<br><hr><br>
+			<div class="small">
+				Film Short<br><a href="deadend.html">Dead End (2012)</a>
+				<br><br>
+				Film Scene<br><a href="tomorrowland.html">Tomorrowland - Athena's Death Scene (2015)</a>
+				<br><br>
+				Film Short<br><a href="thebox.html">Inside The Box (2015)</a>
+				<br><hr><br>
+				GIF<br><a href="avalanche.html">Avalanche</a>
+				<br><br>
+				Fanfiction<br><a href="christmas.html">TSCC: A Christmas Carol</a>
+
+				<br><br>
+				Misc.<br><a href="404.html">404 Page</a> (lol)
+				</div>
+        </div>
+
+		<div class="section section-3">
+			<br>
+			<div class="big">Project (O)DB</div>
+			<br><hr><br>
+			<div class="small">
+				Whenever I come across someone who gets stuck in my head I dedicate a page to said person.<br>
+			<br><hr><br>
+			<b>Completed</b>
+			<br><br>
+			<a href="summer.html">Summer Glau</a>
+			<hr><br>
+			<b>Coming "soon"</b>
+			<br><br>
+			<a href="#">Raffey Cassidy</a>
+		</div>
+
+	</div>
+   <script language="JavaScript">
          var space = " ";
-         var speed = "185";
+         var speed = "200";
          var pos = 0;
-         var msg = "Dedicating Boredom";
+         var msg = "-- Jawe.XYZ";
          function Scroll()
          {
          document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
@@ -66,16 +79,10 @@
          window.setTimeout("Scroll()", speed);
          }
          Scroll();
-
    </script>
-   
-   
-   <!--Render whole website in grayscale-->
-   <style>
-      html {
-      filter: gray; /* IE6-9 */
-      filter: grayscale(1); /* Firefox 35+ */
-      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-      }
-   </style>
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+	<script src="main.js"></script>
+</body>
 </html>

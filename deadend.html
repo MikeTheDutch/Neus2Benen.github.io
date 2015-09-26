@@ -1,28 +1,39 @@
 <html>
 <head>
 <title>Dead End</title>
-<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
 <style>
 
-video#bgvid { 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-size: cover;
-    width: 100%; 
-    height: auto; 
-    z-index: -100;
+#video-bg {
+    position: fixed;
+  top: 50%;
+  transform: translateY(-50%); right: 0; bottom: 0; left: 0;
 }
+#video-bg > video {
+    position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+
 
 </style>
 
 </head>
+
 <body bgcolor="#000000">
-    
-<video autoplay="" loop="" id="bgvid" preload="auto" poster="data/loading.png">
-<source src="data/Dead End (2012).mp4" type="video/mp4">
-</video>
+
+
+<div id="video-bg">
+<video autoplay="" loop="" id="bgvid" preload="auto" poster="data/images/loading.png">
+<source src="data/media/deadend.mp4" type="video/mp4">
+  </video>
+</div>
 
    <script language="JavaScript">
          var space = " ";

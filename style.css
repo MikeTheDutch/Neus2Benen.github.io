@@ -1,0 +1,46 @@
+
+.big {
+  
+  	font-family: 'Montserrat', sans-serif;
+  	font-size: 48px;
+  	color: #000;
+	text-align: center;
+  	word-wrap: break-word;
+  
+}
+
+
+.small {
+  
+  	font-family: 'Montserrat', sans-serif;
+  	font-size: 20px;
+  	color: #000;
+	text-align: center;
+  	word-wrap: break-word;
+  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	text-align: center;
+  	word-wrap: break-word;
+  	background: #fff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
