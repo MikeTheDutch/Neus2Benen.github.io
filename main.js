@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$('#fullpage').fullpage({
 		menu: true,
-		scrollingSpeed: 750,
+		scrollingSpeed: 325,
 		verticalCentered: true,
 		fitToSection: true
 		
