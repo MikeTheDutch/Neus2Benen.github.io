@@ -1,0 +1,65 @@
+(function(){
+
+console.log(cWidth);
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+
+canvas.width = 468;
+canvas.height = 310;
+
+var cWidth = canvas.width;
+var cHeight = canvas.height;
+
+
+var gradient = ctx.createRadialGradient(40,50,10,100,50,300);
+gradient.addColorStop(0, "#8ED6FF");
+gradient.addColorStop(1, "#004CB3");
+
+ctx.fillStyle = gradient;
+ctx.fillRect(0,0, canvas.width, canvas.height);
+
+ctx.fillStyle = "green";
+ctx.arc(canvas.width / 2, canvas.height + 135, 300, 0, Math.PI, true);
+ctx.fill();
+
+
+ctx.beginPath(); // Begin met nieuwe tekenpad
+ctx.moveTo(200, 150); // Zet de potlood op 200px op de x as en 150px op de y as
+ctx.lineTo(200, 100); // maak een lijn van het vorige punt naar 200px x as en 100px y-as
+ctx.lineTo(280, 100);
+ctx.lineTo(280, 150);
+ctx.moveTo(200, 100);
+ctx.lineTo(240, 50);
+ctx.lineTo(280, 100);
+ctx.lineTo(280, 100);
+ctx.lineTo(280, 150);
+ctx.lineTo(200, 150);
+ctx.lineTo(250, 150);
+ctx.lineTo(250, 120);
+ctx.lineTo(230, 120);
+ctx.lineTo(230, 150);
+ctx.moveTo(272, 90);
+ctx.lineTo(272, 60);
+ctx.lineTo(255, 60);
+ctx.lineTo(255, 70);
+ctx.stroke(); // Geef vulling aan delijn zodat je hem ziet
+ctx.closePath(); // Sluit het huidige tekenpad af
+
+
+ctx.beginPath();
+ctx.fillStyle = "yellow";
+ctx.arc(40, 30, 20, 0, Math.PI * 2); //Doe Math.PI * 2 voor een hele cirkel
+ctx.fill();
+
+// Paadje met quadratic curves
+ctx.beginPath();
+ctx.fillStyle = "gray";
+ctx.moveTo(230, 145);
+ctx.quadraticCurveTo(220, 240, 150, canvas.height); //x van bezierpunt, y van bezierpunt, x van eindpunt, y van eindpunt
+ctx.lineTo(250, canvas.height);
+ctx.quadraticCurveTo(280, 260, 250, 145);
+ctx.closePath();
+ctx.fill();
+
+
+})();
