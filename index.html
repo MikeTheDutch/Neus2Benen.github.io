@@ -2,19 +2,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jawe.XYZ</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-	<link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/modernizr.js"></script>
+	<link rel="stylesheet" type="text/css" href="scripts/fullpage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="scripts/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="scripts/style.css">
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 
 <script>
 	$(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").delay(500).fadeOut(1000);;
+		$(".se-pre-con").delay(500).fadeOut(500);;
 	});
 	</script>
 <style>
@@ -89,28 +88,39 @@
 				</div>
         </div>
 
-		<div class="section section-4">
-			<br>
+		<div class="section section-4 active">
 			<div class="big">Project (O)DB</div>
-			<br><hr><br>
-			<div class="small">
+			<br><hr>
+
 				Whenever I come across someone who gets stuck in my head I dedicate a page to said person.<br>
-			<br><hr><br>
+			<hr>
+			<div class="medium">
 			<b>Completed</b>
+			</div>
+			<div class="small">
+			<br>
+			<a href="summer.html"><img src="data/images/header.png" width="150" height="150"/></a>
+
+			<br>
+      		<a href="summer.html">Summer Glau</a>
+			<hr>
+
+			</div>
+			<div class="medium">
+			<b>Coming "soon" (someday)</b>
+			</div>
+			<div class="small">
 			<br><br>
-			<a href="summer.html">Summer Glau</a>
-			<hr><br>
-			<b>Coming "soon" (maybe never)</b>
-			<br><br>
-			<a href="#"><s>Raffey Cassidy</s></a>
-			<br><br>
-			<a href="#"><s>George Clooney</s></a>
+			<a href="javascript:void(0)"><s>Raffey Cassidy</s></a>
+			&nbsp;&nbsp;
+			<a href="javascript:void(0)"><s>George Clooney</s></a>
+			</div>
 		</div>
 
 	</div>
 
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
-	<script src="main.js"></script>
+	<script src="scripts/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/fullpage.js/jquery.fullPage.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
