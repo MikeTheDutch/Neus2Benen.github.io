@@ -22,8 +22,7 @@
     "jquery.fullPage.css",
     "jquery.fullPage.js",
     "jquery.fullPage.scss",
-    "package.json",
-    "README.md"
+    "package.json"
   ],
   "dependencies": {
     "jquery": ">=1.6.0"
