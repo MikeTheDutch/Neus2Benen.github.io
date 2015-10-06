@@ -1,72 +1,70 @@
 <html>
-   <head>
-      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-      <title>Summer Glau</title>
+
+<head>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title>Summer Glau</title>
 
 
-<style>
-   html {
-        background-color: #111;
-        -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
-   }
+    <style>
+        html {
+            background-color: #111;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .wrapper {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            margin: 0 auto -4em;
+        }
+        
+        .footer,
+        .push {
+            height: 4em;
+        }
+        
+        #parent img {
+            position: absolute;
+            display: block;
+            z-index: -1;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 2%;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+        }
+    </style>
 
-
-
-
-    * {
-    margin: 0;
-    }
-    html, body {
-    height: 100%;
-    }
-    .wrapper {
-
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -4em;
-    }
-    .footer, .push {
-    height: 4em;
-    }
-
-
-
-
-    #parent img{
-    position: absolute;
-    display: block;
-    z-index: -1;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-      width: 100%;
-      max-width: 600px;
-    border-radius: 2%;
-    border-width: 1px;
-     border-style: solid;
-    border-color: white;
-    }
-
-
-</style>
-
-<script>
-window.addEventListener("keydown", function(e) {
+    <script>
+        window.addEventListener("keydown", function(e) {
     // space, page up, page down and arrow keys:
     if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
         e.preventDefault();
     }
 }, false);
-</script>
-      <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
-      <!--The background image is changed between every 1.5 and 2.5 seconds-->
-      <script type="text/javascript">
-         var totalCount = 131;
+
+    </script>
+    <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
+    <!--The background image is changed between every 1.5 and 2.5 seconds-->
+    <script type="text/javascript">
+        var totalCount = 131;
          function ChangeIt()
          {
     document.documentElement.style.overflow = 'hidden';  // firefox, chrome
@@ -80,49 +78,53 @@ window.addEventListener("keydown", function(e) {
          //This is self-explanationary
          setTimeout(arguments.callee, delay);
          }
-      </script>
+    </script>
 
-   </head>
-   <body>
+</head>
 
-
-        <div class="wrapper">
-            <center><div class="parent" id="parent"></div></center>
-            <div class="push"></div></div>
-        <div class="footer">
-            <center><img src="data/images/dedicating.png"></center>
-        </div>
-
-      <!--Autoplay and loop music in the background-->
-      <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
-      <audio id="totally" autoplay loop>
-         <source src="data/audio/totally.mp3">
-         <source src="data/audio/totally.ogg">
-      </audio>
+<body>
 
 
-      <!--Add the image on the bottom-->
+    <div class="wrapper">
+        <center>
+            <div class="parent" id="parent"></div>
+        </center>
+        <div class="push"></div>
+    </div>
+    <div class="footer">
+        <center><img src="data/images/dedicating.png"></center>
+    </div>
+
+    <!--Autoplay and loop music in the background-->
+    <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
+    <audio id="totally" autoplay loop>
+        <source src="data/audio/totally.mp3">
+        <source src="data/audio/totally.ogg">
+    </audio>
 
 
-
-
-
-
-
-
-   </body>
+    <!--Add the image on the bottom-->
 
 
 
-   <!--Call the ChangeIt function on page load to start randomizing the background image-->
-   <script type="text/javascript">
-      ChangeIt();
-   </script>
 
 
-   <!--Scrolling document title-->
-   <script language="JavaScript">
-         var audio = document.getElementById("summer");
+
+
+
+</body>
+
+
+
+<!--Call the ChangeIt function on page load to start randomizing the background image-->
+<script type="text/javascript">
+    ChangeIt();
+</script>
+
+
+<!--Scrolling document title-->
+<script language="JavaScript">
+    var audio = document.getElementById("summer");
          audio.volume = 0.25;
          var space = " ";
          var speed = "200";
@@ -136,6 +138,6 @@ window.addEventListener("keydown", function(e) {
          window.setTimeout("Scroll()", speed);
          }
          Scroll();
+</script>
 
-   </script>
 </html>
