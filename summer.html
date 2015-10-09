@@ -1,143 +1,105 @@
 <html>
-
-<head>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <title>Summer Glau</title>
-
-
-    <style>
-        html {
-            background-color: #111;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            filter: grayscale(100%);
-        }
-        
-        * {
-            margin: 0;
-        }
-        
-        html,
-        body {
-            height: 100%;
-        }
-        
-        .wrapper {
-            min-height: 100%;
-            height: auto !important;
-            height: 100%;
-            margin: 0 auto -4em;
-        }
-        
-        .footer,
-        .push {
-            height: 4em;
-        }
-        
-        #parent img {
-            position: absolute;
-            display: block;
-            z-index: -1;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            max-width: 600px;
-            border-radius: 2%;
-            border-width: 1px;
-            border-style: solid;
-            border-color: white;
-        }
-    </style>
-
-    <script>
-        window.addEventListener("keydown", function(e) {
-    // space, page up, page down and arrow keys:
-    if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-        e.preventDefault();
-    }
-}, false);
-
-    </script>
-    <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
-    <!--The background image is changed between every 1.5 and 2.5 seconds-->
-    <script type="text/javascript">
-        var totalCount = 131;
-         function ChangeIt()
-         {
-    document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-    document.body.scroll = "no"; // ie only
-
-         // Generate a random number between 1 and 131, and a random delay between 1500 and 2500ms
-         var num = Math.floor(Math.random() * totalCount ) + 1;
-         var delay = Math.floor(Math.random() * 2500) + 1500;
-         //Set the background image and attributes
-         document.getElementById('parent').innerHTML = '<img src="data/media/summer/' + num + '.gif" />';
-         //This is self-explanationary
-         setTimeout(arguments.callee, delay);
+   <head>
+      <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+      <title>Summer Glau</title>
+      <style>
+         noise {
+         background:url(data/images/noise.gif);
+         position: absolute;
+         display: block;
+         z-index: -1;
+         margin: auto;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 100%;
+         height: 100%;
+         opacity: 0.1;
+         filter: alpha(opacity=10);
          }
-    </script>
-
-</head>
-
-<body>
-
-
-    <div class="wrapper">
-        <center>
+         html {
+         background-color: #111;
+         -webkit-filter: grayscale(100%);
+         -moz-filter: grayscale(100%);
+         filter: grayscale(100%);
+         }
+         * {
+         margin: 0;
+         }
+         html,
+         body {
+         height: 100%;
+         }
+         .wrapper {
+         min-height: 100%;
+         height: auto !important;
+         height: 100%;
+         margin: 0 auto -4em;
+         }
+         .footer,
+         .push {
+         height: 4em;
+         }
+         #parent img {
+         position: absolute;
+         display: block;
+         z-index: -1;
+         margin: auto;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 100%;
+         max-width: 600px;
+         border-radius: 2%;
+         border-width: 1px;
+         border-style: solid;
+         border-color: white;
+         }
+      </style>
+      <!--This JS code randomly picks one of the 131 GIF files in the /data/ folder and sets them as the background image-->
+      <!--The background image is changed between every 1.5 and 2.5 seconds-->
+      <script type="text/javascript">
+         var totalCount = 131;
+          function ChangeIt()
+          {
+         document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+         document.body.scroll = "no"; // ie only
+         
+          // Generate a random number between 1 and 131, and a random delay between 1500 and 2500ms
+          var num = Math.floor(Math.random() * totalCount ) + 1;
+          var delay = Math.floor(Math.random() * 2500) + 1500;
+          //Set the background image and attributes
+          document.getElementById('parent').innerHTML = '<img src="data/media/summer/' + num + '.gif" />';
+          //This is self-explanationary
+          setTimeout(arguments.callee, delay);
+          }
+      </script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <center>
             <div class="parent" id="parent"></div>
-        </center>
-        <div class="push"></div>
-    </div>
-    <div class="footer">
-        <center><img src="data/images/dedicating.png"></center>
-    </div>
-
-    <!--Autoplay and loop music in the background-->
-    <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
-    <audio id="totally" autoplay loop>
-        <source src="data/audio/totally.mp3">
-        <source src="data/audio/totally.ogg">
-    </audio>
-
-
-    <!--Add the image on the bottom-->
-
-
-
-
-
-
-
-
-</body>
-
-
-
-<!--Call the ChangeIt function on page load to start randomizing the background image-->
-<script type="text/javascript">
-    ChangeIt();
-</script>
-
-
-<!--Scrolling document title-->
-<script language="JavaScript">
-    var audio = document.getElementById("summer");
-         audio.volume = 0.25;
-         var space = " ";
-         var speed = "200";
-         var pos = 0;
-         var msg = "Dedicating Boredom";
-         function Scroll()
-         {
-         document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-         pos++;
-         if (pos > msg.length) pos = 0;
-         window.setTimeout("Scroll()", speed);
-         }
-         Scroll();
-</script>
-
+         </center>
+         <div class="push"></div>
+      </div>
+      <div class="footer">
+         <center><img src="data/images/dedicating.png"></center>
+         <noise>
+         </noise>
+      </div>
+      <!--Autoplay and loop music in the background-->
+      <!--Including multiple audio extensions for cross-browser support (only 1 can play at the same time anyway)-->
+      <audio autoplay loop>
+         <source src="data/audio/stuffwedid.mp3">
+         <source src="data/audio/stuffwedid.ogg">
+      </audio>
+      <!--Add the image on the bottom-->
+   </body>
+   <!--Call the ChangeIt function on page load to start randomizing the background image-->
+   <script type="text/javascript">
+      ChangeIt();
+      
+   </script>
 </html>
