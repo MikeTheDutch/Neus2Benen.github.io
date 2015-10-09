@@ -2,6 +2,7 @@
    <head>
       <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
       <title>Summer Glau</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=9">
       <style>
          noise {
          background:url(data/images/noise.gif);
@@ -20,9 +21,10 @@
          }
          html {
          background-color: #111;
-         -webkit-filter: grayscale(100%);
+         filter:gray; /* IE6-9 */
+         -webkit-filter:grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
          -moz-filter: grayscale(100%);
-         filter: grayscale(100%);
+         -o-filter: grayscale(100%);
          }
          * {
          margin: 0;
