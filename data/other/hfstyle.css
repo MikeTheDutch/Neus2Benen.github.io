@@ -63,14 +63,14 @@ input.bitButton {
 }
 
 a.bitButton:hover {
-    background: #646d78 !important;
+    background: #b08e60 !important;
 }
 
 a.bitButton {
     background: none !important;
     background-color: none !important;
     background-image: none !important;
-    border: 1px solid #646d78 !important;
+    border: 1px solid #b08e60 !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
     color: #DBDBDB !important;
@@ -86,11 +86,11 @@ a.bitButton {
 }
 
 a.navButton :hover {
-    color: #646d78 ;
+    color: #b08e60 ;
 }
 
 a.navButton hover {
-    color: #646d78 ;
+    color: #b08e60 ;
 }
 
 a.pagination_first {
@@ -368,7 +368,7 @@ td.tfoot form select {
 }
 
 div.menu ul:after {
-    background-color: #646d78 !important;
+    background-color: #b08e60 !important;
     border-radius: 3px !important;
     color: #fff !important;
     content: "midnight theme" !important;
@@ -510,7 +510,7 @@ td.thead strong {
 }
 
 td.tcat {
-    background-color: #182330 !important;
+    background-color: #967953 !important;
     background-image: none !important;
     border: none !important;
     border-radius: 0px !important;
@@ -524,7 +524,7 @@ td.tcat {
 }
 
 td.thead {
-    background-color: #646d78 !important;
+    background-color: #b08e60 !important;
     background-image: none !important;
     border-radius: 0px !important;
     border-style: none !important;
@@ -692,14 +692,14 @@ input.bitButton {
 }
 a.bitButton:hover {
 
-    background: #646d78 !important;
+    background: #b08e60 !important;
 }
 a.bitButton {
 
     background: none !important;
     background-color: none !important;
     background-image: none !important;
-    border: 1px solid #646d78 !important;
+    border: 1px solid #b08e60 !important;
     border-radius: 5px  !important;
     box-shadow: none  !important;
     color: #DBDBDB !important;
@@ -715,11 +715,11 @@ a.bitButton {
 }
 
 a.navButton :hover {
-    color: #646d78 !important;
+    color: #b08e60 !important;
 }
 
 a.navButton hover {
-    color: #646d78 !important;
+    color: #b08e60 !important;
 }
 
 
@@ -1057,7 +1057,7 @@ td.smalltext.post_author_info {
 }
 
 td.tcat {
-    background-color: #182330 !important;
+    background-color: #967953 !important;
     background-image: none !important;
     border: none !important;
     border-radius: 0px !important;
@@ -1093,7 +1093,7 @@ td.tfoot form select {
     padding: 3px !important;
 }
 div.menu ul:after {
-    background-color: #646d78 !important;
+    background-color: #b08e60 !important;
     border-radius: 3px !important;
     color: #fff !important;
     content: "midnight theme" !important;
@@ -1110,7 +1110,7 @@ div.menu ul:after {
 }
 
 td.thead {
-    background-color: #646d78 !important;
+    background-color: #b08e60 !important;
     background-image: none !important;
     border-radius: 0px !important;
     border-style: none !important;
