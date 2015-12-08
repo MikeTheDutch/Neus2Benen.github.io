@@ -153,7 +153,7 @@ div.logo a img {
 
 div.menu ul {
     background: none !important;
-    background-color: #1a1a1a !important;
+    background-color: #cccccc !important;
     font-size: 12px !important;
     font-weight: normal !important;
     height: 0px !important;
@@ -510,7 +510,7 @@ td.thead strong {
 }
 
 td.tcat {
-    background-color: #1a1a1a !important;
+    background-color: #cccccc !important;
     background-image: none !important;
     border: none !important;
     border-radius: 0px !important;
