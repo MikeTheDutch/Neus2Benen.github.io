@@ -7,9 +7,9 @@ function startCountDown(i, p, f) {
   var countDownObj = document.getElementById("countDown");
 
   countDownObj.count = function (i) {
-    countDownObj.innerHTML = "Hold on, going back in " + i + "...";
+    countDownObj.innerHTML = "Hold on, going back in " + i + " . . .";
     if (i == 1) {
-      window.location.href = "http://jawe.pw";
+      window.location.href = "http://jawe.xyz";
       return;
     }
     setTimeout(function () {
