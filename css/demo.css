@@ -1,17 +1,19 @@
 @import url('reset.css');
-
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300);
 /* General Codrops Demo Style */
 body{
 	background:#000;
 	color:#fff;
-	font-size:14px;
+	font-size: 1.3vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 2px;
 }
 a{
-	color:#ddd;
+	color:#fff;
 	text-decoration:none;
 }
 a:hover{
-	color:#00c6e3;
+	color:#FFB6C1;
 }
 p.sub{
 	padding:25px 10px 10px 10px;
@@ -24,7 +26,10 @@ p.sub{
 
 .content{
 	margin:0px 25px 30px 25px;
+
 }
+
+
 @media screen and (max-width: 640px) {
 	.header a{
 		display:block;

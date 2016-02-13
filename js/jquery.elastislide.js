@@ -228,7 +228,7 @@
 			$(window).on('resize.elastislide', function( event ) {
 				
 				instance._reload();
-				
+
 				// slide to the current element
 				clearTimeout( instance.resetTimeout );
 				instance.resetTimeout	= setTimeout(function() {
@@ -239,15 +239,22 @@
 			
 			// navigation buttons events
 			this.$navNext.on('click.elastislide', function( event ) {
+                
+               
 				instance._slide('right');
 			});
 			
 			this.$navPrev.on('click.elastislide', function( event ) {
+
 				instance._slide('left');
+                
+
+
 			});
 			
 			// item click event
 			this.$slider.on('click.elastislide', 'li', function( event ) {
+
 				instance.options.onClick( $(this) );
 				return false;
 			});
@@ -405,7 +412,7 @@
 		setCurrent			: function( idx, callback ) {
 			
 			this.current = idx;
-			
+
 			var ml		= Math.abs( parseFloat( this.$slider.css('margin-left') ) ),
 				posR	= ml + this.visibleWidth,
 				fml		= Math.abs( this.current * this.itemW );

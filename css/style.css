@@ -1,4 +1,5 @@
 .rg-image-wrapper{
+
 	position:relative;
 	padding:20px 30px;
 	background:transparent url(../images/black.png) repeat top left;
@@ -6,6 +7,10 @@
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	min-height:20px;
+      position: relative;
+  top: 50%;
+  transform: translateY(15%);
+
 }
 .rg-image{
 	position:relative;
@@ -14,7 +19,11 @@
 }
 .rg-image img{
     width: auto;
-    height: 30vw;
+    height: 26vw;
+  top: 50%;
+  	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:  5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }
 .rg-image-nav a{
 	position:absolute;
@@ -69,16 +78,20 @@
 	background-position:0px -16px;
 }
 .rg-loading{
-	width:46px;
-	height:46px;
+
+	width:50px;
+	height:50px;
 	position:absolute;
-	top:50%;
 	left:50%;
-	background:#000 url(../images/loader.gif) no-repeat center center;
-	margin:-23px 0px 0px -23px;
-	z-index:100;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	opacity:0.7;
+	background: #000 url(../images/ajax-loader.gif) no-repeat center center;
+
+}
+
+#caption {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#downloadLink {
+    text-align: center;
 }

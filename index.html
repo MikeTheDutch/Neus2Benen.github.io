@@ -27,7 +27,7 @@
 					</div>
 				{{/if}}
 				<div class="rg-image"></div>
-				<div class="rg-loading"></div>
+
 				<div class="rg-caption-wrapper">
 					<div class="rg-caption" style="display:none;">
 						<p></p>
@@ -37,6 +37,7 @@
 		</script>
     </head>
     <body>
+              
 		<div class="container">
 			
 			<div class="content">
@@ -44,14 +45,19 @@
 				<div id="rg-gallery" class="rg-gallery">
 					<div class="rg-thumbs">
 						<!-- Elastislide Carousel Thumbnail Viewer -->
+                        <div id="caption"></div>
 						<div class="es-carousel-wrapper">
 							<div class="es-nav">
+                                
 								<span class="es-nav-prev">Previous</span>
 								<span class="es-nav-next">Next</span>
+                                 
 							</div>
+                            
 							<div class="es-carousel">
 								<ul>
-									<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg"</a></li>
+                                    
+									<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" </a>
                                     <li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg"</a></li>
                                     <li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg"</a></li>
                                     <li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg"</a></li>
@@ -170,14 +176,21 @@
                                     <li><a href="#"><img src="images/thumbs/117.jpg" data-large="images/117.jpg"</a></li>
                                     <li><a href="#"><img src="images/thumbs/118.jpg" data-large="images/118.jpg"</a></li>
 								</ul>
+                                
 							</div>
 						</div>
 						<!-- End Elastislide Carousel Thumbnail Viewer -->
 					</div><!-- rg-thumbs -->
+                            <div id="downloadLink"></div>
+                            				<div class="rg-loading"></div>
 				</div><!-- rg-gallery -->
 				
 			</div><!-- content -->
+            
 		</div><!-- container -->
+  
+        
+
         <script type="text/javascript">
 
 
