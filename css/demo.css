@@ -1,0 +1,38 @@
+@import url('reset.css');
+
+/* General Codrops Demo Style */
+body{
+	background:#000;
+	color:#fff;
+	font-size:14px;
+}
+a{
+	color:#ddd;
+	text-decoration:none;
+}
+a:hover{
+	color:#00c6e3;
+}
+p.sub{
+	padding:25px 10px 10px 10px;
+	text-align:left;
+	color:#aaa;
+}
+.clr{
+	clear:both;
+}
+
+.content{
+	margin:0px 25px 30px 25px;
+}
+@media screen and (max-width: 640px) {
+	.header a{
+		display:block;
+		text-align:center;
+		font-size:10px;
+		text-shadow:none;
+	}
+	.header span.right_ab{
+		float:none;
+	}
+}
