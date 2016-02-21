@@ -4,8 +4,8 @@
 	$.fn.touchwipe 				= function(settings) {
 		
 		var config = {
-			min_move_x: 20,
-			min_move_y: 20,
+			min_move_x: 1,
+			min_move_y: 1,
 			wipeLeft: function() { },
 			wipeRight: function() { },
 			wipeUp: function() { },
@@ -79,12 +79,12 @@
 	};
 	
 	$.elastislide.defaults 		= {
-		speed		: 450,	// animation speed
+		speed		: 1000,	// animation speed
 		easing		: '',	// animation easing effect
-		imageW		: 190,	// the images width
-		margin		: 3,	// image margin right
+		imageW		: 100,	// the images width
+		margin		: 10,	// image margin right
 		border		: 0,	// image border
-		minItems	: 1,	// the minimum number of items to show. 
+		minItems	: 0,	// the minimum number of items to show. 
 							// when we resize the window, this will make sure minItems are always shown 
 							// (unless of course minItems is higher than the total number of elements)
 		current		: 0,	// index of the current item
@@ -231,9 +231,6 @@
 
 				// slide to the current element
 				clearTimeout( instance.resetTimeout );
-				instance.resetTimeout	= setTimeout(function() {
-					instance._slideToCurrent();
-				}, 200);
 				
 			});
 			
@@ -417,9 +414,7 @@
 				posR	= ml + this.visibleWidth,
 				fml		= Math.abs( this.current * this.itemW );
 			
-			if( fml + this.itemW > posR || fml < ml ) {
-				this._slideToCurrent();
-			}
+
 			
 			if ( callback ) callback.call();
 			
