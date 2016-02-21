@@ -19,6 +19,8 @@
 	line-height:0px;
 }
 .rg-image img{
+		  max-width: 100%;
+    height: auto;
   	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius:  5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
