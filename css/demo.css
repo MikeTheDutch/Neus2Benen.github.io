@@ -9,12 +9,14 @@ body{
     letter-spacing: 2px;
 }
 a{
-	color:#fff;
-	text-decoration:none;
+	color:#FFB6C1;
+	text-decoration: none;
 }
 a:hover{
-	color:#FFB6C1;
+	color:#fff;
+		text-decoration: none;
 }
+
 p.sub{
 	padding:25px 10px 10px 10px;
 	text-align:left;

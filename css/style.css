@@ -21,6 +21,13 @@
 	-webkit-border-radius:  5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
+#parent {display: table;}
+
+#child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .rg-image-nav a{
 	position:absolute;
 	top:0px;
