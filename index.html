@@ -17,14 +17,13 @@
 </head>
 
 <body>
-    <!--
-    <div id="bg"><img src="http://jawe.pw/data/media/images/summer/127.gif"/> </div>
--->
 
-<video autoplay loop poster="poster.png" id="bgvid">
+<div style="width:100%; height:100%; background-image:url('http://jawe.pw/data/media/images/summer/127.gif');">
+<video autoplay loop poster="poster.png" id="bgvid" >
     <source src="http://notcammy.me/data/video/esquire.webm" type="video/webm">
     <source src="http://notcammy.me/data/video/esquire.mp4" type="video/mp4">
 </video>
+        </div>
 
 
     <div id="content">
@@ -44,7 +43,9 @@
 
         </center>
     </div>
-
+    <!--
+    <div id="bg"><img src=""/> </div>
+    -->
     <script>
         window.onload = function() {
     var backgroundAudio=document.getElementById("music");
