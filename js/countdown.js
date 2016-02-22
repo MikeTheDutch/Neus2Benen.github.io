@@ -9,7 +9,7 @@ function startCountDown(i, p, f) {
   countDownObj.count = function (i) {
     countDownObj.innerHTML = "Hold on, going back in " + i + " . . .";
     if (i == 1) {
-      window.location.href = "http://jawe.xyz";
+      window.location.href = "http://notcammy.me/";
       return;
     }
     setTimeout(function () {
