@@ -214,7 +214,7 @@ $(function () {
                     largesrc = $thumb.data('large')
                    
                 var maxImg = largesrc.replace('images/', 'images/max/');
-                $('#downloadLink').html(('<a href=' + maxImg + '>Click here for full size</a>'));
+                $('#downloadLink').html(('<a href=' + maxImg + ' target="_blank">Click here for full size</a>'));
                 maxImg = maxImg.replace(/\D/g,'');
                 $('#caption').html(('Image ' + maxImg));
                 $('<img/>').load(function () {
