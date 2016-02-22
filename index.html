@@ -8,9 +8,8 @@
     <title>Cammy's manhole</title>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-            <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
     <style type="text/css">
-    
         html {
             background-color: #000
         }
@@ -28,7 +27,6 @@
         body {
             background: #000;
             color: #fff;
-            font-size: 1.3vw;
             font-family: 'Yanone Kaffeesatz', sans-serif;
             letter-spacing: 2px;
         }
@@ -68,12 +66,13 @@
 <body>
     <div id="content">
 
-        <center><a href="http://jawe.xyz/gallery">View gallery</a>
+        <center><a href="http://jawe.xyz/gallery"><h2>View gallery</h2></a>
             <br>
             <br>
-            <font size="3">&#9658; Janet Jackson - Alright (Kaytranada Flip)</font>
+            &#9658; Janet Jackson - Alright (Kaytranada Flip)
             <br>
-            <a href="javascript:void()" onclick="toggleControls();"><font size="2">Toggle audio controls</font></a>
+            <br>
+            <a href="javascript:void()" onclick="toggleControls();">Toggle audio controls</a>
             <br>
             <audio id="music" autoplay loop>
                 <source src="http://jawe.xyz/data/audio/main.ogg" type="audio/ogg">
@@ -88,7 +87,6 @@
     var backgroundAudio=document.getElementById("music");
     backgroundAudio.volume=0.025;
 }
-
     </script>
 
 
@@ -103,7 +101,6 @@ function toggleControls() {
      video.setAttribute("controls","controls")   
   }
 }
-
     </script>
 </body>
 
