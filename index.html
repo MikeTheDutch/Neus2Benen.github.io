@@ -19,22 +19,26 @@
 <body>
 
 
-<video autoplay loop id="bgvid" >
-    <source src="http://notcammy.me/data/video/esquire.webm" type="video/webm">
-    <source src="http://notcammy.me/data/video/esquire.mp4" type="video/mp4">
-</video>
-        </div>
+    <video autoplay loop id="bgvid">
+        <source src="http://notcammy.me/data/video/esquire.webm" type="video/webm">
+        <source src="http://notcammy.me/data/video/esquire.mp4" type="video/mp4">
+    </video>
+    </div>
 
 
     <div id="content">
 
-        <center><a href="http://notcammy.me/gallery"><h2>View gallery</h2></a>
+        <center><a id="gallery" href="http://notcammy.me/gallery">View gallery</a>
             <br>
             <br>
-            &#9658; Mura Masa - Lovesick Fuck
             <br>
             <br>
-            <a href="javascript:void()" onclick="toggleControls();">Toggle audio controls</a>
+            <br>
+            <br> &#9658; Mura Masa - Lovesick Fuck
+            <br>
+            <br>
+            <a id="audiocontrols" href="javascript:void()" onclick="toggleControls();">Toggle audio controls</a>
+            <br>
             <br>
             <audio id="music" autoplay loop>
                 <source src="http://notcammy.me/data/audio/main2.ogg" type="audio/ogg">
@@ -43,9 +47,9 @@
 
         </center>
     </div>
-    
 
-    
+
+
     <script>
         window.onload = function() {
     var backgroundAudio=document.getElementById("music");
