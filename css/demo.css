@@ -14,20 +14,33 @@
 
 @media only screen and (max-width: 640px) {
 
-   html { font-size: 1.5em; }
+   html { font-size: 2em; }
 
 }
-body{
+html{
+     font-size: 2em;
 	background:#000;
 	color:#fff;
+                text-shadow: 0px 0px 4px rgb(255, 255, 255);
     font-family: 'Yanone Kaffeesatz', sans-serif;
     letter-spacing: 2px;
 }
 a{
+     font-size: 1.3em;
 	color:#FFB6C1;
+           text-shadow: 0px 0px 4px rgb(236,149,192);
+    color: #EC95C0;
+    text-decoration: none;
+      -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
 	text-decoration: none;
 }
 a:hover{
+            text-shadow: 0px 0px 4px rgb(255, 255, 255);
 	color:#fff;
 		text-decoration: none;
 }
