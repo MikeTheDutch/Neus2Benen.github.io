@@ -30,13 +30,13 @@ html {
     background-size: cover;
     width: 100%;
     height: 100%;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
     
 }
 a#audiocontrols {
    font-size: 1em;
-       text-shadow: 0px 0px 10px rgb(236,149,192);
-    color: #EC95C0;
+       text-shadow: 0px 0px 6px rgb(0,0,0);
+    color: #FFF;
     text-decoration: none;
       -o-transition:.5s;
   -ms-transition:.5s;
@@ -51,8 +51,8 @@ a#gallery {
      bottom:0;
      right:0;
     font-size: 1em;
-    color: #fff;
-        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+       text-shadow: 0px 0px 6px rgb(0,0,0);
+    color: #FFF;
     text-decoration: none;
       -o-transition:.5s;
   -ms-transition:.5s;
@@ -62,14 +62,14 @@ a#gallery {
   transition:.5s;
 }
 a#gallery:hover {
-            text-shadow: 0px 0px 10px rgb(236,149,192);
-    color: #EC95C0;
+    color: #fff;
+        text-shadow: 0px 0px 10px rgb(255, 0, 0);
 
     text-decoration: none;
 }
 a#audiocontrols:hover {
     color: #fff;
-        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        text-shadow: 0px 0px 10px rgb(255, 0, 0);
     text-decoration: none;
 }
 body {
