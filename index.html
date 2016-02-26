@@ -91,6 +91,14 @@ function toggleControls() {
            $uni2.html(newCont2); // Replace with new content
            var $ch = $uni.find('span'); // character
             var $ch2 = $uni2.find('span');
+           
+           $uni2.hover(function(){
+               $(this).css"background-color", "yellow");
+           }, function(){
+                 $(this).css"background-color", "red");
+           }
+           }
+           
            function anim() {
 
                itv = setInterval(function() {
